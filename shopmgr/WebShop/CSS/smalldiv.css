@@ -1,0 +1,33 @@
+﻿body {
+}
+
+.divsmall {
+    overflow: hidden;
+    width: 182px;
+    height: 212px;
+    float: left;
+    margin: 10px 10px 10px 0;
+    background-image: url('/img/small.jpg');
+    /*border: 1px solid gray;/*#FF8600*/
+    border-radius: 3px;
+}
+
+    .divsmall:hover {
+        filter: alpha(Opacity=90);
+        -moz-opacity: 0.9;
+        opacity: 0.9;
+    }
+
+.divsmalltxt {
+    overflow: hidden;
+    width: 182px;
+    float: left;
+    margin: 182px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    filter: alpha(Opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
