@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Text;
+using System.IO;
+
+/// <summary>
+/// HelperReadLocalTxt 的摘要说明
+/// </summary>
+public class HelperReadLocalTxt
+{
+	public HelperReadLocalTxt()
+	{
+		//
+		// TODO: 在此处添加构造函数逻辑
+		//
+	}
+    public static string ReadTxt(string strPath)
+    {
+       // HttpContext.Current.Response.Write("Helper" + strPath); return "";
+        //string strFilePath = System.AppDomain.CurrentDomain.BaseDirectory + strPath;
+        string strHtmlContent = File.ReadAllText(strPath, Encoding.GetEncoding("GB2312"));
+        return strHtmlContent;
+    }
+}

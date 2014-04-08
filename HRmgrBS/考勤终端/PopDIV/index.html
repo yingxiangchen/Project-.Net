@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>强悍的JavaScript弹出层,移动层,兼容FF/IE</title>
+<link href="popWin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="popWin.js"></script>
+<script type="text/javascript" src="rounded_corners.inc.js"></script>
+<script type="text/javascript">
+
+window.onload = function(){
+      settings = {
+          tl: { radius: 8 },
+          tr: { radius: 8 },
+          bl: { radius: 8 },
+          br: { radius: 8 },
+          antiAlias: true,
+          autoPad: true,
+          validTags: ["div"]
+      }
+      var myBoxObject = new curvyCorners(settings, "MsgBox");
+      myBoxObject.applyCornersToAll();
+  }
+function showMsg(){
+	var div = document.getElementById("MsgBox").innerHTML;
+	popWin("Messages", div, 400, 200);
+}
+</script>
+</head>
+<body>
+<center>
+<input type="button" value="ShowDiv" onClick="showMsg()">
+<div id="myBox" class="myBox">这是一个测试文本，将会在弹出的DIV层中出现<input type="text" value="kfjdk" id="txtText" /> </div>
+   <div id="MsgBox" class="myBox">测试</div>
+</center>
+</body>
+</html>
