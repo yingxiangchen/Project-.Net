@@ -8,6 +8,7 @@
     <title>我的易达旺铺</title>
     <link href="../CSS/NavBar.css" rel="stylesheet" />
     <link href="../CSS/StyleUser.css" rel="stylesheet" />
+    <link href="shopCss.css" rel="stylesheet" />
 </head>
 <body style="font-size:13px;">
     <form id="form1" runat="server">
@@ -28,6 +29,9 @@
                 </asp:BulletedList>
             </div>
         </div>
+        <iframe class="mainframe" runat="server" id="mainframe" src="~/MyShop/In.aspx">
+
+        </iframe>
         <div class="div980">
             <div style="background-image:url('/img/logonbg.jpg');height:1000px;" ></div>
         </div>

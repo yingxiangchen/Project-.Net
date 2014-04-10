@@ -6,12 +6,34 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="shopCss.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    进货管理
-    </div>
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
+                <div class="toolbar">
+                    <asp:Button ID="btnAddForm" runat="server" Text="采购入库" OnClick="btnAddForm_Click" />
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <div class="divmain">
+
+        </div>
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
+                <div id="popdiv" class="divpop" runat="server" visible="false">
+                    <div class="divpoptitle">
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    </div>
+                    <div>fdsafdasfd</div>
+                    
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        
     </form>
 </body>
 </html>

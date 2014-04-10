@@ -5,15 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class MyShop_In : System.Web.UI.Page
+public partial class WebUserControl : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
-    }
-    protected void btnAddForm_Click(object sender, EventArgs e)
-    {
-       
-        this.popdiv.Visible = true;
     }
 }
