@@ -1,0 +1,26 @@
+﻿body {
+}
+.divuser {
+    padding: 5px 10px 5px;
+    background-color: #eee;
+    border: 0.5px solid #ccc;
+    color: #686767;
+    text-align: right;
+}
+
+    .divuser div {
+        width: 980px;
+        margin: auto auto auto auto;
+        text-align: right;
+        padding: 5px 5px 5px 5px;
+    }
+
+        .divuser div span {
+            color: gray;
+            font-size: 13px;
+        }
+
+        .divuser div input {
+            color: gray;
+            font-size: 13px;
+        }

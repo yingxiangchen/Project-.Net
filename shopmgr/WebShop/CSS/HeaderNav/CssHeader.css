@@ -1,0 +1,18 @@
+﻿body {
+}
+
+
+.divheader {
+    background-image: url('/img/logo/logo1.png');
+    background-repeat: no-repeat;
+    width: 980px;
+    margin: 30px auto 20px auto;
+    height: 100px;
+}
+
+.divheaderfullwidth {
+    background-image: url('/img/logo/logo1.png');
+    background-repeat: no-repeat;
+    margin: 30px auto 20px auto;
+    height: 100px;
+}

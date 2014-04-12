@@ -14,36 +14,28 @@ namespace BLL
     public class UserBll
     {
         //注册新用户
-        public static string  AddUser(string userName, string userPwd,string confirmUserPwd)
+        public static string AddUser(string userName, string userPwd, string confirmUserPwd, string userTel, string Province, string City, string District)
         {
-            if (userName.Trim() == "")
-            {
-                return "用户名不能为空";
-            }
-            if (userPwd.Trim() == "")
-            {
-                return "密码不能为空";
-            }
-            if (userPwd != confirmUserPwd)
-            {
-                return "两次输入的密码不相符";
-            }
-            if (CheckUserExists(userName))
-            {
-                return "用户‘" + userName + "’已存在";
-            }
-            string sql = "insert into userlist(userName,userPwd) values(@username,@userpwd)";
-            SqlParameter[] sp = new SqlParameter[2];
+            //CHECK DATA
+            if (userName.Trim() == "") { return "用户名不能为空"; }
+            if (userPwd.Trim() == "") { return "密码不能为空"; } 
+            if (userPwd != confirmUserPwd) { return "两次输入的密码不相符"; }
+            if (userTel.Trim() == null||userTel=="") { return "请输入手机号码"; }
+            if (Province == "" || Province == "请选择"||Province==null) { return "请选择所在地省份"; }
+            if (City == "" || City == "请选择"||City==null) { return "请选择所在地城市"; }
+            if (District == "" || District == "请选择"||District==null) { return "请选择所在地区"; }
+            if (CheckUserExists(userName)) { return "用户‘" + userName + "’已存在"; }
+            //注册
+            string sql = "insert into userlist(userName,userPwd,userTel,AddProvince,AddCity,AddDistrict) values(@username,@userpwd,@usertel,@province,@city,@district)";
+            SqlParameter[] sp = new SqlParameter[6];
             sp[0] = new SqlParameter("@username", userName);
-            sp[1] = new SqlParameter("@userpwd", MD5( userPwd));
-            if (DAL.DBReaderWriter.ExecuteSql(sql, sp))
-            {
-                return "用户‘" + userName + "’注册成功";
-            }
-            else
-            {
-                return "不可预知的错误，用户名：‘" + userName + "’注册不成功，请重试或联系统管理员";
-            }
+            sp[1] = new SqlParameter("@userpwd", MD5(userPwd));
+            sp[2] = new SqlParameter("@userTel", userTel);
+            sp[3] = new SqlParameter("@province", Province);
+            sp[4] = new SqlParameter("@city", City);
+            sp[5] = new SqlParameter("@district", District);
+            if (DAL.DBReaderWriter.ExecuteSql(sql, sp)) { return "用户‘" + userName + "’注册成功"; }
+            else { return "不可预知的错误，用户名：‘" + userName + "’注册不成功，请重试或联系统管理员"; }
         }
         //删除用户
         public static string DeleteUser(string userName)

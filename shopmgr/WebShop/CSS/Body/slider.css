@@ -3,4 +3,5 @@
 .divslider{
     display:block;
     height:500px;
+    background-image:url('/img/logonbg.jpg');
 }

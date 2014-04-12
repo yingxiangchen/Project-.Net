@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.divLogontitle {
+    background-color: #c71515;
+    color: white;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 18px 12px 18px 12px;
+    text-align: center;
+    font-family: YouYuan;
+    border-radius: 5px 5px 0 0;
+}

@@ -1,32 +1,38 @@
 ﻿body {
 }
 
-.lbl {
+.div980 {
+    width: 980px;
+    margin: auto auto auto auto;
+    text-align: center;
+}
+
+.lblBig {
     margin: 0px 5px 5px 5px;
     padding: 10px 0 10px 0;
     text-align: left;
 }
 
-.txt {
+.txtBig {
     margin: 5px 5px 5px 5px;
     padding: 10px 10px 10px 10px;
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #ddd;
-    color: gray;
+    color: #515151;
 }
 
-    .txt:hover {
+    .txtBig:hover {
         border: 1px solid red;
     }
 
-.btn {
+.btnBig {
     margin: 10px 5px 10px 10px;
     color: #FFFFFF;
     /*padding: .5em .5em;*/
     border-radius: 3px;
-    border: 0; 
-    background-image: url('/img/nav.png');
+    border: 1px solid #ff4e00;
+    background-color: #FF8600;
     background-repeat: repeat-x;
     font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
     font-size: 20px;
@@ -34,13 +40,14 @@
     line-height: 41px;
 }
 
-    .btn:hover {
+    .btnBig:hover {
         /*background-color:#ff7901;*/
-        background-image: url('/img/navhover.png');
+        background-color: #fb9422;
+        /*border:1px solid #fa9220;*/
         background-repeat: repeat-x;
     }
 
-.btnloginlogon {
+.btnSmall {
     color: gray;
     margin: 0 1px;
     padding: .5px 5px;
@@ -51,24 +58,24 @@
     font-size: 12px;
     /*font-weight: bold;*/
     width: 80px;
-    height:20px;
+    height: 20px;
 }
 
-    .btnloginlogon:hover {
+    .btnSmall:hover {
         background-color: #FF8600;
         color: black;
     }
 
-.cbo {
+.cboBig {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     font-size: 16px;
     border-radius: 3px;
-    border: 1px solid #ddd;    
-    color: gray;
+    border: 1px solid #ddd;
+    color: #515151;
 }
 
-    .cbo:hover {
+    .cboBig:hover {
         border: 1px solid red;
     }
 
@@ -82,27 +89,4 @@
         text-decoration: solid;
     }
 
-.divuser {
-    padding: 5px 10px 5px;
-    background-color: #eee;
-    border: 0.5px solid #ccc;
-    color: #686767;
-    text-align: right;
-}
 
-    .divuser div {
-        width: 980px;
-        margin: auto auto auto auto;
-        text-align: right;
-        padding: 5px 5px 5px 5px;
-    }
-
-        .divuser div span {
-            color: gray;
-            font-size: 13px;
-        }
-
-        .divuser div input {
-            color: gray;
-            font-size: 13px;
-        }

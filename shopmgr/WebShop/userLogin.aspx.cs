@@ -11,20 +11,18 @@ public partial class userLogin : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            BLL.Address.GetProvince(cboProvince);
-            cboCity.Items.Insert(0, "请选择");
-            cboDistrict.Items.Insert(0, "请选择");
+            BLL.Address.GetProvince(cboProvince,cboCity,cboDistrict );            
         }
     }
     protected void btnOK_Click(object sender, EventArgs e)
     {
         
-        lblInfo.Text= BLL.UserBll.AddUser(txtUserName.Text.Trim(), txtUserPwd.Text,txtUserPwdConfirm.Text );
+        lblInfo.Text= BLL.UserBll.AddUser(txtUserName.Text.Trim(), txtUserPwd.Text,txtUserPwdConfirm.Text ,txtMTel.Text.Trim(),cboProvince.SelectedItem.Text,cboCity.SelectedItem.Text,cboDistrict.SelectedItem.Text);
     }
 
     protected void cboProvince_SelectedIndexChanged(object sender, EventArgs e)
     {
-        BLL.Address.GetCity(cboProvince.SelectedItem.Value, cboCity);
+        BLL.Address.GetCity(cboProvince.SelectedItem.Value, cboCity,cboDistrict );
     }
     protected void cboCity_SelectedIndexChanged(object sender, EventArgs e)
     {

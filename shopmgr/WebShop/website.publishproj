@@ -18,7 +18,7 @@ website.publishproj
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9dd118c5-ac54-4be3-9e14-31e238a48061}</ProjectGuid>
     <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
-    <SourceWebVirtualPath>/page</SourceWebVirtualPath>
+    <SourceWebVirtualPath>/WebShop</SourceWebVirtualPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SourceWebProject>http://localhost:4472</SourceWebProject>
     <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/2/ROOT</SourceWebMetabasePath>
