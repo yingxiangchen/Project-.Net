@@ -29,7 +29,7 @@
     }
 
         .navul li:hover {
-            background-image: url('/img/navhover.png');
+            background-color:red;
             background-repeat: repeat-x;
         }
 
@@ -40,5 +40,5 @@
         }
 
             .navul li a:hover {
-                color: red;
+                color: yellow;
             }

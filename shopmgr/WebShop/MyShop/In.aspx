@@ -13,7 +13,7 @@
         <asp:ScriptManager runat="server"></asp:ScriptManager>
         <asp:UpdatePanel runat="server">
             <ContentTemplate>
-                <div class="toolbar">
+                <div class="divtoolbar">
                     <asp:Button ID="btnAddForm" runat="server" Text="采购入库" OnClick="btnAddForm_Click" />
                 </div>
             </ContentTemplate>

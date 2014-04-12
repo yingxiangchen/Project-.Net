@@ -59,7 +59,8 @@
                 <br />
                 <asp:Button ID="btnOK" runat="server" Text="免费注册" CssClass="btnBig" Width="200px" OnClick="btnOK_Click" />
                 &nbsp;&nbsp;
-                已有用户？请<a class="a" href="userLogon.aspx">直接登录</a>
+                已有用户？请<a class="a" href="userLogon.aspx">直接登录</a><br /><br />
+                <a class="a" href="Default.aspx" style="color:gray">回首页</a>
                 <br />
                 <br />
 

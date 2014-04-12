@@ -33,7 +33,7 @@
             <div class="divnav">
                 <div class="div980">
                     <ul class="navul">
-                        <li style="background-image: url('/img/navhover.png')"><a href="Default.aspx">首页</a> </li>
+                        <li style="background-color: red"><a href="Default.aspx">首页</a> </li>
                         <li><a href="http://www.baidu.com">经验交流</a></li>
                         <li><a href="MyShop/myShop.aspx">我的店铺</a>  </li>
                         <li>给我们提意见</li>

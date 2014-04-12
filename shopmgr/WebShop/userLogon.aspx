@@ -65,7 +65,8 @@
                 </div>
 
                 <div>
-                    还没有用户？<a class="a" href="userLogin.aspx">免费注册</a>
+                    还没有用户？<a class="a" href="userLogin.aspx">免费注册</a><br /><br />
+                    <a class="a" href="Default.aspx" style="color:gray;">回首页</a>
                 </div>
                 <br />
             </div>
